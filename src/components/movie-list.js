@@ -21,6 +21,7 @@ class MovieList extends Component {
                 })
 
                     .catch(erro => {
+                        console.log(erro);
                         this.setState(
                             { lista: [{ id: 0, filme: 'Deu erro' }] }
                         );
