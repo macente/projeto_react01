@@ -5,12 +5,12 @@
         "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/12/cartaz-suburbicon-482x708.jpg"
     },
     {
-        "produto": "Pantera Negra",
+        "filme": "Pantera Negra",
         "id": 2,
         "imagem":"http://www.cineflix.com.br/wp-content/uploads/2017/06/pantera-negra-478x708.jpg"
     },
     {
-        "produto": "Vingadores: Guerra Infinita",
+        "filme": "Vingadores: Guerra Infinita",
         "id": 3,
         "imagem":"http://www.cineflix.com.br/wp-content/uploads/2017/11/guerra-infinita-cartaz-478x708.jpg"
     },
