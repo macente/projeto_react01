@@ -7,12 +7,12 @@
     {
         "filme": "Pantera Negra",
         "id": 2,
-        "imagem":"http://www.cineflix.com.br/wp-content/uploads/2017/06/pantera-negra-478x708.jpg"
+        "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/06/pantera-negra-478x708.jpg"
     },
     {
         "filme": "Vingadores: Guerra Infinita",
         "id": 3,
-        "imagem":"http://www.cineflix.com.br/wp-content/uploads/2017/11/guerra-infinita-cartaz-478x708.jpg"
+        "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/11/guerra-infinita-cartaz-478x708.jpg"
     },
 
 ]
