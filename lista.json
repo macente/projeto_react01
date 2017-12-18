@@ -2,16 +2,19 @@
     {
         "filme": "Suburbicon: Bem-vindos ao paraiso",
         "id": 1,
-        "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/12/cartaz-suburbicon-482x708.jpg"
+        "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/12/cartaz-suburbicon-482x708.jpg",
+        "trailler": "https://www.youtube.com/watch?v=7GTIfd71SGo"
     },
     {
         "filme": "Pantera Negra",
         "id": 2,
-        "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/06/pantera-negra-478x708.jpg"
+        "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/06/pantera-negra-478x708.jpg",
+        "trailler": "https://www.youtube.com/watch?v=5d34xP5-9Aw"
     },
     {
         "filme": "Vingadores: Guerra Infinita",
         "id": 3,
-        "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/11/guerra-infinita-cartaz-478x708.jpg"
+        "imagem":"https://www.cineflix.com.br/wp-content/uploads/2017/11/guerra-infinita-cartaz-478x708.jpg",
+        "trailler": "https://www.youtube.com/watch?v=3BXq73F2_z4"
     }
 ]
