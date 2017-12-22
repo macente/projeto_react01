@@ -2,14 +2,14 @@ import React from 'react';
 import { Text, View, Image, ScrollView } from 'react-native';
 import Button from './button';
 
-const MovieItem = ({ onPress, dados }) => {
-    const { imagemStyle, containerStyle } = estilos;
+const MovieItem = ({ onPressTrailler,  dados }) => {
+    const { imagemStyle, containerStyle, estiloText } = estilos;
 
     return(
         <View style={containerStyle}>
-            <Text>{dados.filme}</Text>
+            <Text style={estiloText}>{dados.filme}</Text>
             <Image style={imagemStyle} source={{ uri: dados.imagem }} />
-            <Button onPress={onPress}>Remover</Button>
+            <Button onPress={onPressTrailler}>Trailler</Button>
         </View>
     );
 };
@@ -17,12 +17,17 @@ const MovieItem = ({ onPress, dados }) => {
 const estilos = {
     imagemStyle: {
         height: 300,
-        width: 300
+        width: 200
 
     },
     containerStyle: {
         alignItems: 'center',
         flexDirection: 'column'
+    },
+    estiloText: {
+        fontSize: 20,
+        fontWeight:'bold',
+        color:'#000000'
     }
 };
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View, Image, ScrollView  } from 'react-native';
+import { Text, View, Image, ScrollView, Linking, WebView  } from 'react-native';
+import AppTitle from './app-title';
 import MovieItem from './movie-item';
 
 class MovieList extends Component {
@@ -32,20 +33,23 @@ class MovieList extends Component {
 
     renderListMovie() {
          return this.state.lista.map(
-            itemList => <MovieItem key={itemList.id} onPress={()=>this.removeMovie(itemList)} dados={itemList} />
+            itemList => <MovieItem key={itemList.id} onPressTrailler={()=>this.traillerMovie(itemList)} dados={itemList} />
          );
     }
 
-    removeMovie(itemList){
-        let l = this.state.lista.slice(0);
-        let i = l.indexOf(itemList);
-        l.splice(i, 1);
-        this.setState({lista:l});
-        console.log("REMOVENDO");
+    traillerMovie(itemList){
+        Linking.canOpenURL(itemList.trailler).then(supported => {
+        if (!supported) {
+            console.log('Can\'t handle url: ' + itemList.trailler);
+        } else {
+            return Linking.openURL(itemList.trailler);
+        }
+        }).catch(err => console.error('An error occurred', err));
     }
 
     render() {
         return (<ScrollView>
+                    <AppTitle texto={'Próximos Lançamentos'} />    
                     {this.renderListMovie()}
                 </ScrollView>
         );
